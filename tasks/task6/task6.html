@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Форма відправлення адреси електронної пошти</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Форма відправлення адреси електронної пошти</h2>
+
+    <form action="mailto:receiver@example.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
+      <label for="email">Ваша електронна пошта:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="subject">Тема листа:</label><br>
+      <input type="text" id="subject" name="subject"><br>
+      <label for="message">Повідомлення:</label><br>
+      <textarea id="message" name="message"></textarea><br><br>
+      <input type="submit" value="Відправити">
+    </form>
+</div>
+
+</body>
+</html>

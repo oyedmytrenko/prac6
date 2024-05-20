@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для аутентифікації користувача</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Форма для аутентифікації користувача</h1>
+    <form id="authenticationForm">
+        <table>
+            <tr>
+                <td align="left">Ім'я:</td>
+                <td align="right"><input type="text" name="username" size="11"></td>
+            </tr>
+            <tr>
+                <td align="left">Пароль:</td>
+                <td align="right"><input type="password" name="password" size="11"></td>
+            </tr>
+            <tr align="center">
+                <td align="left"><button type="submit">Передати</button></td>
+                <td align="right"><button type="button" onclick="clearForm()">Очистити</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
